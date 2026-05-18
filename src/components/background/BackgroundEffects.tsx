@@ -1,5 +1,5 @@
 
-import "./background.css";
+import "../background/background.css";
 
 export default function BackgroundEffects() {
   return (
