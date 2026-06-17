@@ -1,23 +1,27 @@
 import SearchBar from "@/components/searchbar/SearchBar";
 import Background from "@/components/background/BackgroundEffects";
+import Card from "@/components/card/card";
 import "@/app/css/home.css";
+
 
 export default function Home() {
   return (
     <div>
-      <main className="relative min-h-screen bg-[#2b2b2b] flex items-center justify-center text-white px-4">
+      <main className="home-main">
 
         <Background />
 
-        <div className="z-10 flex flex-col items-center gap-6">
+        <div className="home-content">
 
           <div className="search-container">
-            <h1 className="text-3xl md:text-4xl font-semibold text-center">
+            <h1 className="home-title">
               Qual o Jogo de Hoje?
             </h1>
 
             <SearchBar />
           </div>
+
+          <Card />
 
 
         </div>
